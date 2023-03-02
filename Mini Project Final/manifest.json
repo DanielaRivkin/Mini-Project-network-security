@@ -1,0 +1,24 @@
+{
+"name": "Malicious URL Blocker",
+"version": "1.0.0",
+"description": "Malicious URL Blocker",
+"manifest_version": 2,
+"author": "Omer and Daniela",
+"browser_action":{
+    "default_popup": "popup.html",
+    "default_title": "Blocker"
+},
+"permissions": [
+    "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "declarativeWebRequest",
+    "<all_urls>",
+    "activeTab",
+    "webNavigation"
+],
+"background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  }
+}
